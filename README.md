@@ -16,3 +16,6 @@ Launching the Dashboard
 source ./venv/bin/activate
 streamlit run ./app.py
 ```
+
+## Resources:
+1. [OpenAI Quickstart](https://beta.openai.com/docs/quickstart)
