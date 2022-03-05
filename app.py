@@ -19,22 +19,11 @@ st.title("🏢 Dunder Mifflin Rabies Awareness Chatbot For the Cure")
 
 st.sidebar.title("🏢 The Office Chatbot")
 st.sidebar.markdown("""
-#### Not sure what to say to Dwight?
-Try some of these:
-```
-1. What is your name?
-2. Where do you work?
-3. What is the best bear?
-4. Michael!
-5. you're fired
-6. beets are the worst vegetable
-```
 
 **Feedback/Questions**: 
 [join our slack workspace](https://join.slack.com/t/officechatbot/shared_invite/zt-14rlr8chh-C~rwJN~~KUAX~DOkvcno1g)
 
-Like 🏢 **The Office Chatbot** and want to say thanks?       
-[:coffee: buy me a coffee](https://www.buymeacoffee.com/brydon)
+Like 🏢 **The Office Chatbot** and want to say thanks? [:coffee: buy me a coffee](https://www.buymeacoffee.com/brydon)
 """)
 
 
@@ -158,3 +147,16 @@ response = openai.Completion.create(
 )
 
 st.text(response.choices[0].text.split('\n')[0])
+
+with st.expander("Not sure what to say to Dwight?"):
+    st.markdown(""" 
+Try some of these:
+```
+1. What is your name?
+2. Where do you work?
+3. What is the best bear?
+4. Michael!
+5. you're fired
+6. beets are the worst vegetable
+```
+    """)
