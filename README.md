@@ -2,6 +2,7 @@
 
 Chatbot for talking to characters from the Office (popular TV show).
 
+<img width="764" alt="image" src="https://user-images.githubusercontent.com/12496987/156899020-82ad9397-0abc-40e8-8a66-03858e0a094a.png">
 
 ## To run dashboard locally:
 Environment setup:
@@ -16,3 +17,6 @@ Launching the Dashboard
 source ./venv/bin/activate
 streamlit run ./app.py
 ```
+
+## Resources:
+1. [OpenAI Quickstart](https://beta.openai.com/docs/quickstart)
