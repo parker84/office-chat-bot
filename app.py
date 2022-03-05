@@ -17,6 +17,7 @@ st.set_page_config(
 )
 st.title("🏢 Dunder Mifflin Rabies Awareness Chatbot For the Cure")
 
+st.sidebar.title("🏢 The Office Chatbot")
 st.sidebar.markdown("""
 #### Not sure what to say to Dwight?
 Try some of these:
