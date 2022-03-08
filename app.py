@@ -140,12 +140,16 @@ Dwight Schrute: I grew up on a farm. I have seen animals having sex in every pos
 Jim: {jim_line}
 Dwight Schrute:"""
 
-response = openai.Completion.create(
-    engine="text-davinci-001",
-    prompt=dwight_and_jim_prompt(jim_line),
-    temperature=0.9,
-)
+@st.cache() # caching just so it's cheaper
+def get_response(jim_line):
+    response = openai.Completion.create(
+        engine="text-davinci-001",
+        prompt=dwight_and_jim_prompt(jim_line),
+        temperature=0.9,
+    )
+    return response
 
+response = get_response(jim_line)
 st.text(response.choices[0].text.split('\n')[0])
 
 with st.expander("Not sure what to say to Dwight?"):

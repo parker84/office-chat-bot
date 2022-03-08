@@ -14,6 +14,11 @@ source ./venv/bin/activate
 pip install -r requirements.txt
 ```
 
+Create a `.env` file save it at your root and specify your API Key:
+```
+OPENAI_API_KEY=your-api-key
+```
+
 Launching the Dashboard
 ```sh
 source ./venv/bin/activate
